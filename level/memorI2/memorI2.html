@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memorI2.css">
+    <title>Jeu de Memoire</title>
+</head>
+<body>
+
+<h1>@NA0TV's SKINS</h1>
+
+<div class="grid">
+    <div class="cards">
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+    </div>
+    <div class="case">
+        <div>
+            <h4>Temps écoulé : </h4>
+            <p id="timer">00:00</p>
+        <script>
+            let secondes = 0;
+            let minutes = 0;
+            let timer = document.getElementById("timer");
+            let interval = setInterval(function(){
+                secondes++;
+                if(secondes == 60){
+                    secondes = 0;
+                    minutes++;
+                    if(minutes == 60){
+                        minutes = 0;
+                    }
+                }
+                timer.innerHTML =  `${minutes< 10 ? "0" + minutes : minutes}:${secondes < 10 ? "0" + secondes : secondes}`;
+            }, 1000);
+        </script> 
+        <h4>Nombre de paires trouvées : </h4>
+        <span class="duo"><p class="">0</p></span><br><br>
+        
+        
+            <button id="go" class="rejouer">REJOUER
+                <script>
+                    let go = document.getElementById("go");
+                    go.addEventListener("click", function(){
+                        window.location.reload();
+                    })
+                </script>
+            </button>
+            <button id="btnRe" class="switch">GHIBLI's GAME
+                <script>
+                    let btnRe = document.getElementById("btnRe");
+                    btnRe.addEventListener("click", function(){
+                        window.location.href = "../memorI/memorI.html";
+                    })
+                </script>
+            </button>
+    </div>
+
+</div>
+
+<button id="btn" class="bout">RETOUR
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            window.location.href = "../level.html";
+        })
+    </script>
+</button>
+
+<script src="memorI2.js"></script>
+</body>
+</html>

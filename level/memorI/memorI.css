@@ -1,0 +1,95 @@
+.card {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    transform-origin: center;
+    transition: 1.5s;
+    background-image: url(./image/back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+  
+    /* cursor: pointer; */
+    /* display: inline-block; */
+  
+
+  .card span {
+    display: none;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* margin: 60px; */
+    width: 60%;
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    float: right;
+    margin-right: 160px;
+  }
+
+ body{
+     background-color: #f0eb4d;
+ }
+
+ h1{
+    color: #179cdb;
+    font-size: 60px;
+    margin-top: 22px;
+    margin-left: 190px;
+    font-family: Ink Free;
+    text-shadow: 4px 4px 6px #ffffff;
+}
+
+.retourne {
+    transform: rotateY(180deg);
+    transition: 1s;
+  }
+
+.case {
+  margin-right: 20px;
+  color: #df7ad2;
+  background-color: #baaded24; 
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  height: 290px;
+  margin-top: 340px;
+  font-family: Copperplate Gothic Light;
+  height: 220px;
+  margin-top: 340px;
+  font-size: 10px;
+  width: 190px;
+
+}
+.grid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.rejouer,.bout{
+  color: #e5fe03;
+  background-color: #df7ad2;
+  border-color: #fff;
+  padding: 5px 10px;
+  font-family: ebrima;
+  font-size: 15px;
+  border-radius: 13px;
+  
+}
+
+.switch {
+  color: #fff;
+  background-color: #3b87d8;
+  border-radius: 13px;
+  border-color: #fff;
+  padding: 5px 10px;
+  font-family: Brush Script MT;
+  font-size: 15px;
+  margin-top: 10px;
+}
+    
+

@@ -1,0 +1,88 @@
+.card {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 13px;
+  margin-bottom: 20px;
+  transform-origin: center;
+  transition: 1.5s;
+  background-image: url(./nao/back.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card span {
+  display: none;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* margin: 10px 10px 10px 10px; */
+  width: 64%;
+  border-radius: 10px;
+  grid-column: 1 / 2;
+  float: right;
+  margin-right: 180px;
+}
+
+body{
+  background-image: url(./nao/stars.jpg);
+  background-size: cover;
+}
+
+h1{
+  color: #fff1f1;
+  font-size: 70px;
+  margin-top: 22px;
+  margin-left: 190px;
+  font-family: Brush Script MT;
+  font-weight: 800;
+  text-shadow: 4px 4px 6px #bee6ddaa;
+}
+
+.retourne {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.case {
+color: #fff;
+background-color: #baaded24; 
+border-radius: 10px;
+padding: 10px 10px;
+text-align: center;
+margin-top: 280px;
+font-size: 12px;
+font-family: copperplate gothic light;
+margin-left: 60px;
+}
+
+.grid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.switch {
+  color: #e5fe03;
+  background-color: #df7ad2;
+  border-radius: 13px;
+  border-color: #fff;
+  padding: 5px 10px 5px 10px;
+  font-family: ebrima;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.rejouer,.bout{
+color: #fff;
+background-color: #3b87d8;
+border-radius: 13px;
+border-color: #fff;
+padding: 5px 10px 5px 10px;
+font-family: Brush Script MT;
+font-size: 15px;
+
+}
