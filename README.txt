@@ -10,3 +10,9 @@ Pour vous assurer que le jeu fonctionne correctement, veuillez commencer par ouv
 
 
 J'espere que vous apprécierez le jeu ! Bonne chance et bonne chance !
+
+---Acceder au jeu en ligne---
+
+https://memorii.netlify.app/
+
+PS: ne pas hésiter à recharger la page si elle prend du temps à se recharger automatiquement!
